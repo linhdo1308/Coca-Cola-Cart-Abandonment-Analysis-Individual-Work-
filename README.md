@@ -50,3 +50,5 @@ In this project, I learned:
 - Fine-tuning the model is difficult. It seemed to us that there is a cut-off point where we could not improve the model performance despite adding features and changing hyper-parameters.
 - Even though domain knowledge is very critical in data analytics, our group do not have much industry knowledge or customer understanding of Coca-Cola.
 - We want to work on causal inference model to dig deeper into customer behaviors, but data on previous periods were not available.
+
+- While building a fill rate analysis, we found that the sales table only covers about a third of order lines. We tested the obvious explanations: ID formats, units, timing, and order revisions. None of them explained it. The gap is consistent over time but varies by channel, which suggests the data extract was filtered somehow. It makes sense because the Swire team might not want to share all business data for just a Capstone Project. So we left fill rate out rather than report a misleading number. The good news: it doesn’t affect our core cart abandonment analysis, and where we do have both records, fulfillment looks very strong.
